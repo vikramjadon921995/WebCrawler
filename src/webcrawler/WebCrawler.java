@@ -16,7 +16,7 @@ public class WebCrawler {
         Accessor.addSeedUrl(SeedUrl);                  //To add the first Url (SeedUrl) to the Container that contains all the pages to be visited
                                                        //addSeedUrl() function defined in UrlAccessor class
     
-        while(pagesvisited <= MaximumUrlToVisit)       //To make the crawler to visit only "MaximumUrlToVisit" Urls
+        while(pagesvisited < MaximumUrlToVisit)       //To make the crawler to visit only "MaximumUrlToVisit" Urls
         {
             String currentUrl;
             currentUrl = Accessor.getNextUrl();        //To get the next url, getNextUrl() defined in UrlAccessor class
